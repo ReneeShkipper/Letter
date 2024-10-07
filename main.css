@@ -3,7 +3,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #607aab;
+    background-color: #f9dede;
     width: 100%;
     margin-top: 150px;
 }
@@ -13,7 +13,7 @@ body {
     z-index: 0;
     width: 400px;
     height: 400px;
-    background-color: #6498fa;
+    background-color: #6693e7;
     border-radius: 3vh;
     transform: translate(0, -30%) rotate(45deg);
 }
@@ -30,20 +30,58 @@ body {
     align-items: center;
 }
 
+.two-sheets {
+    position: absolute;
+    z-index: 2;
+    width: 548px;
+    height: 300px;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 548px solid transparent;
+    border-bottom: 300px solid #81abf9;
+    top: 0;
+    left: 0;
+}
+
+.second {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-right: 548px solid transparent;
+    border-bottom: 300px solid #93b6f8;
+    top: 0;
+    right: 0;
+}
+
 .content {
     height: 260px;
     width: 460px;
     background-color: #ffe0b8;
     border-radius: 1vh;
+    border: 3px dotted #deb887;
 }
 
 .title,
 .text,
 .options {
     font-family: "Brush Script MT", "Cursive", cursive;
-    /* Додано запасний шрифт */
 }
 
 .title {
+    padding-left: 30px;
     font-size: 45px;
+}
+
+.text {
+    padding-top: 50px;
+    font-size: 25px;
 }
