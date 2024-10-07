@@ -3,9 +3,9 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #f9dede;
+    background-color: #dabee9;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .triangle {
@@ -35,7 +35,7 @@ body {
     z-index: 2;
     width: 548px;
     height: 300px;
-    top: 72%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -84,4 +84,11 @@ body {
 .text {
     padding-top: 50px;
     font-size: 25px;
+}
+
+.shadow {
+    width: 300px;
+    height: 150px;
+    background-color: #bea5cb;
+    border-radius: 50%;
 }
