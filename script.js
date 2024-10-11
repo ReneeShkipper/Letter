@@ -37,15 +37,11 @@ for (let i = 0; i < 20; i++) {
 document.querySelector('.hearts-container').addEventListener('click', () => {
     const sheets = document.querySelector('.two-sheets');
     const card = document.querySelector('.conteiner');
-    sheets.classList.add('move-sheets-down');
-    card.classList.add('move-card-up');
-});
-document.querySelector('.hearts-container').addEventListener('click', () => {
-    const sheets = document.querySelector('.two-sheets');
-    const card = document.querySelector('.conteiner');
     const triangle = document.querySelector('.triangle');
+    const shadow = document.querySelector('.shadow');
 
     sheets.classList.add('move-sheets-down');
     card.classList.add('move-card-up');
     triangle.classList.add('move-triangle-down');
+    shadow.classList.add('move-shadow'); // Додаємо клас для тіні
 });

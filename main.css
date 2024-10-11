@@ -100,10 +100,11 @@ body {
 }
 
 .shadow {
-    width: 400px;
-    height: 80px;
+    width: 300px;
+    height: 70px;
     background-color: #b29abf;
     border-radius: 50%;
+    margin-top: 100px;
 }
 
 .hearts-container {
@@ -190,4 +191,17 @@ body {
 
 .move-triangle-down {
     animation: moveTriangleDown 1s forwards ease-in-out;
+}
+
+@keyframes moveShadow {
+    100% {
+        width: 500px;
+        height: 50px;
+        background-color: #81708b;
+        transform: translateY(20px);
+    }
+}
+
+.move-shadow {
+    animation: moveShadow 1s forwards ease-in-out;
 }
