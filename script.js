@@ -6,7 +6,7 @@ function createHeart() {
     const heart = document.createElement('div');
     heart.classList.add('heart');
 
-    const size = getRandomInt(20, 100);
+    const size = getRandomInt(20, 50);
     heart.style.width = `${size}px`;
     heart.style.height = `${size}px`;
 
@@ -37,7 +37,6 @@ for (let i = 0; i < 20; i++) {
 document.querySelector('.hearts-container').addEventListener('click', () => {
     const sheets = document.querySelector('.two-sheets');
     const card = document.querySelector('.conteiner');
-
     sheets.classList.add('move-sheets-down');
     card.classList.add('move-card-up');
 });

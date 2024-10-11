@@ -78,7 +78,7 @@ body {
 .title,
 .text,
 .options {
-    font-family: "Brush Script MT", "Cursive", cursive;
+    font-family: "Cursive", cursive;
 }
 
 .title {
@@ -88,7 +88,15 @@ body {
 
 .text {
     padding-top: 50px;
-    font-size: 25px;
+    font-size: 15px;
+    padding: 10px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.options {
+    text-align: end;
+    padding-right: 10px;
 }
 
 .shadow {
@@ -114,12 +122,10 @@ body {
     0%,
     100% {
         transform: translateY(0) rotate(-45deg);
-        /* Початкова і кінцева позиції */
     }
 
     50% {
         transform: translateY(-30px) rotate(-45deg);
-        /* Піднімаємо на 30 пікселів */
     }
 }
 
@@ -130,7 +136,6 @@ body {
     opacity: 0.7;
     animation: moveUpDown 3s infinite ease-in-out;
     animation-delay: 0s;
-    /* Базова затримка (випадкова затримка буде застосована в JS) */
 }
 
 .heart::before,
@@ -159,15 +164,13 @@ body {
 
 @keyframes moveDown {
     100% {
-        transform: translateY(50%);
-        /* Листки рухаються вниз на 50% */
+        transform: translate(-50%, -16%);
     }
 }
 
 @keyframes moveUp {
     100% {
-        transform: translateY(-50%);
-        /* Картка рухається вгору на 50% */
+        transform: translateY(-15%);
     }
 }
 
@@ -181,8 +184,7 @@ body {
 
 @keyframes moveTriangleDown {
     100% {
-        transform: translateY(50%);
-        /* Ромб рухається вниз на 50% */
+        transform: translate(0) rotate(45deg);
     }
 }
 
