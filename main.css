@@ -19,7 +19,6 @@ body {
     background-color: #6693e7;
     border-radius: 3vh;
     transform: translate(0, -30%) rotate(45deg);
-    margin-top: 12px;
 }
 
 .conteiner {
@@ -42,7 +41,6 @@ body {
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-bottom: 60px;
 }
 
 .first {

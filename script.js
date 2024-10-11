@@ -43,5 +43,5 @@ document.querySelector('.hearts-container').addEventListener('click', () => {
     sheets.classList.add('move-sheets-down');
     card.classList.add('move-card-up');
     triangle.classList.add('move-triangle-down');
-    shadow.classList.add('move-shadow'); // Додаємо клас для тіні
+    shadow.classList.add('move-shadow');
 });
